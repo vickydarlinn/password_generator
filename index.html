@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <h1>Generate a <span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+      </div>
+      <div class="settings">
+        <p>Select password properties</p>
+        <button class="btn lowerCaseBtn">LowerCase Letters</button>
+        <button class="btn upperCaseBtn">UpperCase Letters</button>
+        <button class="btn numbersBtn">Numbers</button>
+        <button class="btn symbolsBtn">Symbols</button>
+        <p>Set Password Strength</p>
+        <span class="pass_length">
+          <button class="minus">-</button>
+          <span class="password_length">8</span>
+          <button class="plus">+</button>
+        </span>
+        <p>Password Strength</p>
+
+        <div class="meter_count">
+          <meter
+            class="myMeter"
+            min="0"
+            max="100"
+            low="35"
+            high="75"
+            optimum="100"
+          >
+            Weak
+          </meter>
+          <div class="meter_text">Weak</div>
+        </div>
+      </div>
+      <div class="generate_password">
+        <button>Generate Password</button>
+      </div>
+      <p class="password_title">
+        Select at least one password property and set its length
+      </p>
+      <div class="generated_pass">
+        <div class="pass1 pass"></div>
+        <div class="pass2 pass"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
